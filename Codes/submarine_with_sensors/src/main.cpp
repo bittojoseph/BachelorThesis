@@ -24,7 +24,7 @@ void loop()
         int yAcc = (int) 1000 * mpu.getAccY();
         int zAcc = (int) 1000 * mpu.getAccZ();
 
-        String toSend = String(xAcc)+ " " + String(yAcc)+ " "+String(zAcc);
+        String toSend = String(xAcc)+ " " + String(yAcc)+ " "+ String(zAcc);
         Serial.println(toSend);
         prev_ms = millis();
     }
