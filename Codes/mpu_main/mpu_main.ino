@@ -11,6 +11,6 @@ void setup() {
 
 void loop() {
   if (mpu.update()) {
-      Serial.println(String(mpu.getAccX(), 4)+" "+String(mpu.getAccY(), 4)+" "+ String(mpu.getAccZ(), 4));
+      Serial.println("p:" + String(mpu.getPitch(), 4)+"y:"+String(mpu.getYaw(), 4));
   }
 }
